@@ -21,7 +21,7 @@ app.on('message_processed', (message) => {
 
   const producer = Producer.create({
     queueUrl: messageForDeliverySQS.vendorID,
-    region: 'eu-central-1'
+    region: 'us-west-2'
   })
 
   setTimeout(async () => {
